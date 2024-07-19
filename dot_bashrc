@@ -1,0 +1,11 @@
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# Configure history
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=32768
+HISTFILESIZE=${HISTSIZE}
+
+# Custom extensions (outside dotfiles)
+[[ -s $HOME/.bashrc-custom ]] && source $HOME/.bashrc-custom
