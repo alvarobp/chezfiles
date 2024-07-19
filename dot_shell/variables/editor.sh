@@ -1,0 +1,2 @@
+export EDITOR=nvim
+export BUNDLER_EDITOR=$EDITOR
