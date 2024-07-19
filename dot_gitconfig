@@ -1,0 +1,60 @@
+[status]
+  short = true
+  branch = true
+
+[merge]
+  tool = opendiff
+
+[push]
+  default = simple
+
+[color]
+  ui = auto
+
+[user]
+  name = Alvaro Bautista
+  email = alvarobp@gmail.com
+  signingkey = 131920AE1AAC5F52
+
+[commit]
+  gpgsign = true
+
+[alias]
+  review = !"git log master..origin/master"
+  am = am -3
+  st = status --short --branch
+  co = checkout
+  di = diff
+  dc = diff --cached
+  sh = show
+  ci = commit
+  amend = commit --amend
+  br = branch
+  ll = log --decorate -p
+  fp = format-patch
+  cp = cherry-pick
+  noff = merge --no-ff
+  aa = add --all
+  fa = fetch --all
+  fapu = "!git fa && git pull"
+  l = "!. ~/.githelpers && pretty_git_log"
+  la = !git l --all
+  r = !git l -20
+  rs = !git l -10
+  ra = !git r --all
+  edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; $EDITOR `f`"
+  add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+  puf = push --force-with-lease
+  # up = !git stash && git pull --rebase && git push origin `git name-rev --name-only HEAD` && git stash pop
+
+[init]
+  defaultBranch = main
+
+[branch]
+  autosetuprebase = always
+
+[branch "master"]
+  rebase = true
+
+[branch "main"]
+  rebase = true
