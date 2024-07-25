@@ -125,7 +125,7 @@ paru -S mise-bin
 ### Shell
 
 ```
-sudo pacman -S alacritty \
+sudo pacman -S alacritty kitty \
   bat \
   fzf \
   tmux
