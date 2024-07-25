@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Kitty Terminal
+Comment=A fast, feature-rich terminal emulator
+Exec=kitty
+Icon=kitty-terminal/icon.png
+Terminal=false
+Type=Application
+Categories=TerminalEmulator;
