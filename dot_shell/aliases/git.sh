@@ -7,6 +7,8 @@ alias gci='git ci'
 __git_complete gci _git_commit
 alias gco='git checkout'
 __git_complete gco _git_checkout
+alias gcp='git cherry-pick'
+__git_complete gcp _git_cherry_pick
 alias gdc='git dc'
 __git_complete gdc _git_diff
 alias gdi='git di'
