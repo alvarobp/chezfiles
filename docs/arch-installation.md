@@ -52,19 +52,13 @@ sudo pacman -S bash-completion man-db \
   net-tools
 ```
 
-## AUR with paru
+## AUR with yay
 
 ```
-mkdir -p ~/Downloads/apps
-sudo pacman -S rustup
-cd ~/Downloads/apps
-git clone https://aur.archlinux.org/paru.git
-cd paru
-rustup override set stable
-rustup update stable
-rustup default stable
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
-paru -Syy
 ```
 
 ### System upgrades
@@ -72,7 +66,7 @@ paru -Syy
 Install and enable arch-update for semi-automatic system upgrades:
 
 ```
-paru -S arch-update
+yay -S arch-update
 systemctl --user enable --now arch-update-tray.service
 systemctl --user enable --now arch-update.timer
 ```
@@ -103,7 +97,7 @@ sudo pacman -S firefox \
 ```
 
 ```
-paru -S brave-bin \
+yay -S brave-bin \
   dropbox \
   slack-desktop \
   spotify
@@ -113,13 +107,13 @@ paru -S brave-bin \
 
 ```
 sudo pacman -S neovim
-sudo paru -S visual-studio-code-bin
+sudo yay -S visual-studio-code-bin
 ```
 
 ### Development Tools
 
 ```
-paru -S mise-bin
+yay -S mise-bin
 ```
 
 ### Shell
@@ -136,8 +130,8 @@ sudo pacman -S alacritty kitty \
 ```
 sudo pacman -S gnome-themes-extra
 sudo pacman -S xclip
-paru -S adwaita-qt5-git adwaita-qt6-git
-paru -S numix-circle-icon-theme-git
+yay -S adwaita-qt5-git adwaita-qt6-git
+yay -S numix-circle-icon-theme-git
 ```
 
 Install Adwaita One Dark theme for GNOME following instructions from https://www.gnome-look.org/p/1827585. Restart or logout/login.
@@ -186,7 +180,7 @@ sudo pacman -S hyprland \
   qt6-wayland \
   xdg-desktop-portal-hyprland \
   swaync dolphin brightnessctl
-paru -S ulauncher hyprshot
+yay -S ulauncher hyprshot
 ```
 
 ### Fonts
@@ -198,7 +192,7 @@ paru -S ulauncher hyprshot
 
 - VS Code fonts
   ```
-  paru -S ttf-droid
+  yay -S ttf-droid
   ```
 
 ### SSH Agent
