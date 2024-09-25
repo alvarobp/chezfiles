@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Kitty
 Comment=A fast, feature-rich terminal emulator
-Exec=kitty
+Exec=kitty --start-as maximized
 Icon=kitty-whiskers
 Terminal=false
 Type=Application
