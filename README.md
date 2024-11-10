@@ -1,16 +1,15 @@
-# Archfiles
+# Chezfiles
 
-Dotfiles for my new Arch venture.
+Dotfiles using chezmoi
 
 Shout-out to https://github.com/typecraft-dev/dotfiles :)
 
 ## Requirements
 
-- Arch Linux (see [installation guide](docs/arch-installation.md))
-- chezmoi (`pacman -S chezmoi`)
+- chezmoi ([https://www.chezmoi.io/install/](https://www.chezmoi.io/install/))
 
 ## Install dotfiles
 
 ```
-chezmoi init --apply https://github.com/alvarobp/archfiles.git
+chezmoi init --apply https://github.com/alvarobp/chezfiles.git
 ```
