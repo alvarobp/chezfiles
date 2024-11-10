@@ -4,7 +4,7 @@ sudo apt install -y \
 	git curl \
 	build-essential pkg-config autoconf \
   libssl-dev libreadline-dev zlib1g-dev libyaml-dev libreadline-dev libncurses5-dev \
-  ca-certificates
+  ca-certificates unzip
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
