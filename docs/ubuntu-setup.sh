@@ -109,40 +109,10 @@ echo "deb [signed-by=/etc/apt/keyrings/mise-archive-keyring.gpg arch=amd64] http
 sudo apt update
 sudo apt install -y mise
 
-mise use --yes --global awscli@latest
-mise use --yes --global aws-vault@latest
-mise use --yes --global gcloud@latest
-gcloud components update --quiet
-gcloud components install --quiet beta
-mise use --yes --global mc@latest
-mise use --yes --global nodejs@20.10.0
-mise use --yes --global pnpm@9.1.2
-mise plugins install terraform https://github.com/asdf-community/asdf-hashicorp.git
-mise use --yes --global terraform@1.8.3
-
+mise use --yes --global ruby@3
 mise use --yes --global lazygit@latest
 
 # Neovim
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install -y neovim
-
-# ASDF
-# git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
-# asdf plugin-add awscli
-# asdf install awscli
-# asdf install awscli latest
-# asdf plugin-add aws-vault
-# asdf install aws-vault latest
-# asdf plugin-add gcloud
-# asdf install gcloud latest
-# gcloud components update
-# gcloud components install beta
-# asdf plugin-add mc
-# asdf install mc latest
-# asdf plugin-add nodejs
-# asdf install nodejs 20.10.0
-# asdf plugin-add pnpm
-# asdf install pnpm 9.1.2
-# asdf plugin-add terraform
-# asdf install terraform 1.8.3
