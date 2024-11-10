@@ -30,11 +30,16 @@ rm -rf CascadiaMono.zip CascadiaFont
 fc-cache
 
 # Tools
-sudo apt install -y tmux gcalcli pavucontrol
+sudo apt install -y pavucontrol
 brew install fzf
 
 # Terminal
 sudo apt install -y ripgrep bat eza zoxide btop apache3-utils
+
+# TMUX
+sudo apt install -y tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+~/.tmux/plugins/tpm/bin/install_plugins
 
 # Docker
 sudo install -m 0755 -d /etc/apt/keyrings
