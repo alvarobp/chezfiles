@@ -1,4 +1,5 @@
-if cat /etc/os-release | grep -q "ID=arch" && [[ ! -f "$SSH_AUTH_SOCK" ]]; then
-  export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval "$(ssh-agent -s)" >/dev/null
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
-ssh-add -A 2>/dev/null
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
