@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# https://github.com/flameshot-org/flameshot/issues/1622#issuecomment-2110983898
+
+flameshot gui
