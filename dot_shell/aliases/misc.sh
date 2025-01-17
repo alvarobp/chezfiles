@@ -1,10 +1,21 @@
-which batcat &> /dev/null && alias bat='batcat'
+if which batcat &> /dev/null; then
+  alias bat='batcat'
+  alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
+else
+  alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+fi
+
+if which xclip &> /dev/null; then
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste='xclip -selection clipboard -o'
+fi
+
 alias ccd='cd $HOME/code'
 alias curlo='curl -O'
-alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias gf="git log --oneline | fzf --toggle-preview-wrap --preview 'git show --color=always {+1}' | awk '{print $1}' | xargs -I {} git show {}"
+alias lg="lazygit"
 alias n='nvim'
 alias open='xdg-open'
-which xclip &> /dev/null && alias pcopy='xclip -selection clipboard'
 alias rssh='rsync -avvurP -e ssh --delete '
 alias rshell='exec $SHELL' # reload shell
 alias trc='truncate -s0'
