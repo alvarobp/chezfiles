@@ -24,6 +24,8 @@ alias gpuf='git push --force-with-lease'
 __git_complete gpuf _git_push
 alias gr='git rebase'
 __git_complete gr _git_rebase
+alias grb='git branch -D'
+__git_complete grb _git_branch
 alias grc='git rebase --continue'
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
