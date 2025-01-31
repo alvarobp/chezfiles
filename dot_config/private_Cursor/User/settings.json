@@ -1,26 +1,24 @@
 {
-    "editor.dragAndDrop": false,
-    "editor.fontSize": 18,
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": true,
-    "editor.tabSize": 2,
-    "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [
-      80,
-      120
-    ],
-
-    "files.insertFinalNewline": true
-    "files.trimTrailingWhitespace": true,
-    "files.watcherExclude": {
-      "node_modules": true
-    },
-
-    "window.commandCenter": 1,
-    "window.zoomLevel": 2,
-    "workbench.editor.enablePreview": false,
-    "[sql]": {
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-    },
+  "editor.dragAndDrop": false,
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
+  "editor.tabSize": 2,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "node_modules": true
+  },
+  "window.commandCenter": 1,
+  "window.zoomLevel": 2,
+  "workbench.editor.enablePreview": false,
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  }
 }
