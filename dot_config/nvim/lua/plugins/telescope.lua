@@ -16,6 +16,11 @@ return {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown {}
           }
+        },
+        defaults = {
+          file_ignore_patterns = {
+            "node_modules"
+          }
         }
       }
       -- To get ui-select loaded and working with telescope, you need to call
