@@ -58,3 +58,6 @@
 
 [branch "main"]
   rebase = true
+
+[include]
+  path = ~/.gitconfig.override
