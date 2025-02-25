@@ -1,16 +1,3 @@
-[status]
-  short = true
-  branch = true
-
-[merge]
-  tool = opendiff
-
-[push]
-  default = simple
-
-[color]
-  ui = auto
-
 [user]
   name = Alvaro Bautista
   email = alvarobp@gmail.com
@@ -52,12 +39,52 @@
 
 [branch]
   autosetuprebase = always
+  sort = -committerdate
 
 [branch "master"]
   rebase = true
 
 [branch "main"]
   rebase = true
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[fetch]
+ prune = true
+ pruneTags = true
+ all = true
+
+[status]
+  short = true
+  branch = true
+
+[rerere]
+  enabled = true
+  autoupdate = true
+
+[merge]
+  tool = opendiff
+  conflictstyle = zdiff3
+
+[color]
+  ui = auto
+
+[tag]
+  sort = version:refname
+
+[column]
+  ui = auto
+
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
+[help]
+  autocorrect = prompt
 
 [include]
   path = ~/.gitconfig.override
