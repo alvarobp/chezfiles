@@ -6,3 +6,5 @@ gtk-titlebar = false
 window-decoration = false
 window-height = 2000
 window-width = 2000
+
+keybind = ctrl+shift+r=clear_screen
