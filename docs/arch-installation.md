@@ -90,16 +90,13 @@ More info: https://itsfoss.com/bluetooth-arch-linux/
 ### Desktop Apps
 
 ```
-sudo pacman -S firefox \
-  flameshot \
+sudo pacman -S flameshot \
   rofi \
   vlc
 ```
 
 ```
 yay -S brave-bin \
-  dropbox \
-  slack-desktop \
   spotify
 ```
 
@@ -107,19 +104,18 @@ yay -S brave-bin \
 
 ```
 sudo pacman -S neovim
-sudo yay -S visual-studio-code-bin
 ```
 
 ### Development Tools
 
 ```
-yay -S mise-bin
+yay -S mise
 ```
 
 ### Shell
 
 ```
-sudo pacman -S alacritty kitty \
+sudo pacman -S ghostty \
   bat \
   fzf \
   tmux
