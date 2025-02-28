@@ -123,14 +123,25 @@ sudo pacman -S ghostty \
 
 ### GNOME
 
+#### Extensions
+
 ```
-sudo pacman -S gnome-themes-extra
-sudo pacman -S xclip
+sudo pacman -S gnome-themes-extra gnome-shell-extensions gnome-shell-extension-appindicator
+```
+
+Restart or logout/login and activate app indicator extension.
+
+#### Theme
+
+```
+sudo pacman -S xclip gnome-themes-extra
 yay -S adwaita-qt5-git adwaita-qt6-git
 yay -S numix-circle-icon-theme-git
 ```
 
 Install Adwaita One Dark theme for GNOME following instructions from https://www.gnome-look.org/p/1827585. Restart or logout/login.
+
+#### Shortcuts
 
 Configure nautilus as default app for opening directories with `xdg-open`:
 
