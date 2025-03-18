@@ -1,11 +1,6 @@
-## Dump
+# Ubuntu Setup
 
-```shell
-dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > keybindings.conf
-```
+## GNOME Extensions
 
-## Load
-
-```shell
-dconf load keybindings.conf /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
-```
+Dump with `dump.sh`
+Load with `load.sh`
