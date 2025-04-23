@@ -4,7 +4,6 @@ font-size = 17
 background-opacity = 0.95
 gtk-titlebar = false
 window-decoration = false
-window-height = 2000
-window-width = 2000
+maximize = true
 
 keybind = ctrl+shift+r=clear_screen
