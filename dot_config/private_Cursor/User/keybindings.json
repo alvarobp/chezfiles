@@ -9,5 +9,9 @@
         "key": "ctrl+p",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "composerMode.agent"
     }
 ]

@@ -22,5 +22,9 @@
   },
   "[erb]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
-  }
+  },
+  "database-client.autoSync": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "cursor.composer.shouldAllowCustomModes": true,
+  "workbench.colorTheme": "Cursor Dark Midnight"
 }
