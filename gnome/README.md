@@ -7,5 +7,5 @@ dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > k
 ## Load
 
 ```shell
-dconf load keybindings.conf /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+cat keybindings.conf | dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
 ```
