@@ -19,3 +19,9 @@ for alias_file in `ls $HOME/.shell/aliases/*.sh 2> /dev/null`; do source $alias_
 
 # Custom extensions (outside dotfiles)
 [[ -s $HOME/.bashrc-custom ]] && source $HOME/.bashrc-custom
+
+# Source any files in ~/.bash/rc.d
+mkdir -p $HOME/.bash/rc.d
+for rcfile in $HOME/.bash/rc.d/*; do
+    [[ -f $rcfile ]] && source $rcfile
+done
