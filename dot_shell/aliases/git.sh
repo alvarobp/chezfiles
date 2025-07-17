@@ -9,6 +9,8 @@ alias gco='git checkout'
 __git_complete gco _git_checkout
 alias gcp='git cherry-pick'
 __git_complete gcp _git_cherry_pick
+alias gcpn='git cherry-pick --no-commit'
+__git_complete gcpn _git_cherry_pick
 alias gdc='git dc'
 __git_complete gdc _git_diff
 alias gdi='git di'
