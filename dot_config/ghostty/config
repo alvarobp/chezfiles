@@ -7,3 +7,4 @@ window-decoration = false
 maximize = true
 
 keybind = ctrl+shift+r=clear_screen
+keybind = shift+enter=text:\n
