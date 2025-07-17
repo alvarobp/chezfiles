@@ -26,5 +26,11 @@
   "database-client.autoSync": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "cursor.composer.shouldAllowCustomModes": true,
-  "workbench.colorTheme": "Cursor Dark Midnight"
+  "workbench.colorTheme": "Cursor Dark Midnight",
+  "redhat.telemetry.enabled": false,
+  "cursor.composer.textSizeScale": 1.15,
+  "git.autofetch": true,
+  "editor.codeActionsOnSave": {},
+  "cursor.windowSwitcher.sidebarHoverCollapsed": true,
+  "update.releaseTrack": "prerelease"
 }
