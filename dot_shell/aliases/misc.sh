@@ -1,7 +1,8 @@
+# bat is called 'batcat' on Debian/Ubuntu, 'bat' on macOS/Arch
 if which batcat &> /dev/null; then
   alias bat='batcat'
   alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
-else
+elif which bat &> /dev/null; then
   alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 fi
 
