@@ -16,7 +16,10 @@ alias curlo='curl -O'
 alias gf="git log --oneline | fzf --toggle-preview-wrap --preview 'git show --color=always {+1}' | awk '{print $1}' | xargs -I {} git show {}"
 alias lg="lazygit"
 alias n='nvim'
-alias open='xdg-open'
+# Only alias open to xdg-open on Linux (macOS has native open command)
+if [[ "$(uname -s)" == "Linux" ]]; then
+  alias open='xdg-open'
+fi
 alias rssh='rsync -avvurP -e ssh --delete '
 alias rshell='exec $SHELL' # reload shell
 alias trc='truncate -s0'
