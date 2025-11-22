@@ -6,4 +6,6 @@ gnome
 {{ if eq .chezmoi.os "darwin" }}
 .config/picom
 .config/rofi
+.local/share/applications
+.local/share/icons
 {{ end }}
