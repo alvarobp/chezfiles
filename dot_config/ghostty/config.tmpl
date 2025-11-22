@@ -2,8 +2,10 @@ theme = Catppuccin Mocha
 font-family = CaskaydiaMono Nerd Font
 font-size = 17
 background-opacity = 0.95
+{{ if eq .chezmoi.os "linux" -}}
 gtk-titlebar = false
 window-decoration = false
+{{ end -}}
 maximize = true
 
 keybind = ctrl+shift+r=clear_screen
