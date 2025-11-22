@@ -5,7 +5,8 @@ else
   alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 fi
 
-if which xclip &> /dev/null; then
+# Only create pbcopy/pbpaste aliases on Linux (macOS has native commands)
+if [[ "$(uname -s)" == "Linux" ]] && which xclip &> /dev/null; then
   alias pbcopy='xclip -selection clipboard'
   alias pbpaste='xclip -selection clipboard -o'
 fi
