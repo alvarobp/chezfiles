@@ -1,3 +1,9 @@
 README.md
 docs
 gnome
+
+# Linux-only configurations (X11/GNOME specific)
+{{ if eq .chezmoi.os "darwin" }}
+.config/picom
+.config/rofi
+{{ end }}
