@@ -8,5 +8,8 @@ window-decoration = false
 {{ end -}}
 maximize = true
 
+{{ if eq .chezmoi.os "darwin" -}}
+macos-option-as-alt = true
+{{ end -}}
 keybind = ctrl+shift+r=clear_screen
 keybind = shift+enter=text:\n
