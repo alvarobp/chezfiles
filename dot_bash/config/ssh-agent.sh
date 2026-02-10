@@ -5,6 +5,7 @@ case "$(uname)" in
 esac
 
 if [ -S "$onepassword_agent_sock" ]; then
+  export SSH_AUTH_SOCK="$onepassword_agent_sock"
   return 0
 fi
 
